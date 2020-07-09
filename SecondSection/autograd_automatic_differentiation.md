@@ -97,6 +97,16 @@ True
 </div>
 </div>
 </div>
+picture1:你应该已经得到了关于4.5的矩阵。我们将out称为张量o，其中o是对z求平均的结果
+因此，我们可以通过求导得到o对于x的导数结果为4.5
+从数学上来讲，如果你有一个向量的函数y=f(x)，那么向量函数y对x向量的导数就是一个雅可比行列式。
+通常来讲，torch.autograd 是一个计算雅可比向量积的引擎。
+（that is given any vector ,compute the product jv . if v happens to be the gradient of a scalar function l=g(y) ，that is ,then by the chain rule,the jacobian-vector product would be the gradient of l with respect to x:）
+给定任意向量，计算乘积jv。如果v恰好是标量函数l=g(y)的梯度，即，根据链式法则，雅可比矩阵与向量积就是l关于x的梯度:
+（this characteristic of jacobian-vector product makes it very convenient to feed external gradients into a model that has non-scalar output）
+雅可比向量积的这个特性使得将外部梯度输入具有非标量输出的模型非常方便。
+
+
 <div class="trans-right">
 <div class="output-wrap small-font">
 <div class="output-mod ordinary-wrap">
