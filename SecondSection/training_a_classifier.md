@@ -85,7 +85,37 @@ imshow(torchvision.utils.make_grid(images))
 print(' '.join('%5s' % classes[labels[j]] for j in range(4)))
 
 ```
-输出：
+注意：
+1、运行上述代码可能缺少matplotlib包
+anaconda环境导入方法如下图：
+
+![](http://picofwfy.wangfuyu.cn/img/20200712132907.png)
+2、如果你不修改直接运行上述代码，Python会报错，如下
+```c
+RuntimeError: 
+        An attempt has been made to start a new process before the
+        current process has finished its bootstrapping phase.
+
+        This probably means that you are not using fork to start your
+        child processes and you have forgotten to use the proper idiom
+        in the main module:
+
+            if __name__ == '__main__':
+                freeze_support()
+                ...
+
+        The "freeze_support()" line can be omitted if the program
+        is not going to be frozen to produce an executable.
+```
+上述错误的产生原因是，你设置的线程数num_workers=2，而多线程需要在main函数中使用，
+因此解决方案有如下两个
+多进程需要在main函数中运行，
+解决方法1：
+加main函数，在main中调用
+解决方法2：
+num_workers改为0，单进程加载
+
+上述问题解决后，再次运行程序，输出：
 ```python
 cat plane  ship  frog
 

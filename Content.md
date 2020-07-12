@@ -22,24 +22,24 @@
 ### 1.[微调基于torchvision 0.3的目标检测模型](https://github.com/fendouai/PyTorchDocs/blob/master/fourSection/ObjectDetectionFinetuning.md)
 ### 2.[微调TorchVision模型](https://github.com/GorgeousWang/PyTorchDocs/blob/master/fourSection/FinetuningTorchVisionModel.md)
 ### 3.[空间变换器网络](https://github.com/GorgeousWang/PyTorchDocs/blob/master/fourSection/SpatialTranNet.md)
-### 4.[使用PyTorch进行Neural-Transfer](https://github.com/fendouai/PyTorchDocs/blob/master/fourSection/NeuralTransfer.md)
-### 5.[生成对抗示例](https://github.com/fendouai/PyTorchDocs/blob/master/fourSection/AdversarialExampleGene.md)
-### 6.[使用ONNX将模型转移至Caffe2和移动端](https://github.com/fendouai/PyTorchDocs/blob/master/fourSection/ONNX.md)
+### 4.[使用PyTorch进行Neural-Transfer](https://github.com/GorgeousWang/PyTorchDocs/blob/master/fourSection/NeuralTransfer.md)
+### 5.[生成对抗示例](https://github.com/GorgeousWang/PyTorchDocs/blob/master/fourSection/AdversarialExampleGene.md)
+### 6.[使用ONNX将模型转移至Caffe2和移动端](https://github.com/GorgeousWang/PyTorchDocs/blob/master/fourSection/ONNX.md)
 
 ## 第五章：PyTorch之文本篇
-### 1.[聊天机器人教程](https://github.com/fendouai/PyTorchDocs/blob/master/FifthSection/Chatbot.md)
-### 2.[使用字符级RNN生成名字](https://github.com/fendouai/PyTorchDocs/blob/master/FifthSection/Char%20RNN%20Generation.MD)
-### 3.[使用字符级RNN进行名字分类](https://github.com/fendouai/PyTorchDocs/blob/master/FifthSection/Char%20RNN%20Classification.md)
-### 4.[在深度学习和NLP中使用Pytorch](https://github.com/fendouai/PyTorchDocs/blob/master/FifthSection/DeepLearning%20NLP.md)
-### 5.[使用Sequence2Sequence网络和注意力进行翻译](https://github.com/fendouai/PyTorchDocs/blob/master/FifthSection/Translation_S2S%20Network.md)
+### 1.[聊天机器人教程](https://github.com/GorgeousWang/PyTorchDocs/blob/master/FifthSection/Chatbot.md)
+### 2.[使用字符级RNN生成名字](https://github.com/GorgeousWang/PyTorchDocs/blob/master/FifthSection/Char%20RNN%20Generation.MD)
+### 3.[使用字符级RNN进行名字分类](https://github.com/GorgeousWang/PyTorchDocs/blob/master/FifthSection/Char%20RNN%20Classification.md)
+### 4.[在深度学习和NLP中使用Pytorch](https://github.com/GorgeousWang/PyTorchDocs/blob/master/FifthSection/DeepLearning%20NLP.md)
+### 5.[使用Sequence2Sequence网络和注意力进行翻译](https://github.com/GorgeousWang/PyTorchDocs/blob/master/FifthSection/Translation_S2S%20Network.md)
 
-## 第六章：[PyTorch之深度卷积对抗生成网络](https://github.com/fendouai/PyTorchDocs/blob/master/SixthSection/Dcgan.md)
-## 第七章：[PyTorch之强化学习（DQN）教程](https://github.com/fendouai/PyTorchDocs/blob/master/SeventhSection/ReinforcementLearning.md)
+## 第六章：[PyTorch之深度卷积对抗生成网络](https://github.com/GorgeousWang/PyTorchDocs/blob/master/SixthSection/Dcgan.md)
+## 第七章：[PyTorch之强化学习（DQN）教程](https://github.com/GorgeousWang/PyTorchDocs/blob/master/SeventhSection/ReinforcementLearning.md)
 
 ## 第八章：在生产中部署PyTorch模型
-### 1.[通过带Flask的REST API在Python中部署PyTorch](https://github.com/fendouai/PyTorchDocs/blob/master/EigthSection/Deploying%20PyTorch%20in%20Python%20via%20a%20REST%20APIwith%20Flask.md)
-### 2.[TorchScript简介](https://github.com/fendouai/PyTorchDocs/blob/master/EigthSection/torchScript.md)
-### 3.[在C++中加载TorchScript模型](https://github.com/fendouai/PyTorchDocs/blob/master/EigthSection/torchScript_in_C%2B%2B.md)
+### 1.[通过带Flask的REST API在Python中部署PyTorch](https://github.com/GorgeousWang/PyTorchDocs/blob/master/EigthSection/Deploying%20PyTorch%20in%20Python%20via%20a%20REST%20APIwith%20Flask.md)
+### 2.[TorchScript简介](https://github.com/GorgeousWang/PyTorchDocs/blob/master/EigthSection/torchScript.md)
+### 3.[在C++中加载TorchScript模型](https://github.com/GorgeousWang/PyTorchDocs/blob/master/EigthSection/torchScript_in_C%2B%2B.md)
 
 磐创AI 聊天机器人，智能客服：
 
