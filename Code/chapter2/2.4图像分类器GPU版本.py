@@ -1,5 +1,6 @@
 # Author:Elli
 
+
 #1加载并归一化CIFAR10，使用torchvision，用它来加载cifar10数据
 import torch
 import torchvision
@@ -34,6 +35,7 @@ trainset = torchvision.datasets.CIFAR10(root='./data', train=True,
 trainloader = torch.utils.data.DataLoader(trainset, batch_size=4,
                                           shuffle=True, num_workers=0)
 #注意：num_workers表示的是进程数字，作者源代码用的是num_workers=2，而多线程代码需要在main函数中运行或者改为单线程
+#download=ture代表如果自带的开源数据没有下载，则从网络上下载，我已经下载完了写了false
 testset = torchvision.datasets.CIFAR10(root='./data', train=False,
                                        download=False, transform=transform)
 testloader = torch.utils.data.DataLoader(testset, batch_size=4,
@@ -87,7 +89,8 @@ class Net(nn.Module):
         return x
 
 net = Net()
-
+# 在GPU上训练 就像你怎么把一个张量转移到GPU上一样，你要将神经网络转到GPU上。
+#net.to(device)
 
 
 
@@ -109,6 +112,9 @@ for epoch in range(2):  # loop over the dataset multiple times
     for i, data in enumerate(trainloader, 0):
         # get the inputs
         inputs, labels = data
+        #下面是把输入放到GPU上
+        #inputs, labels = inputs.to(device), labels.to(device)
+
         # zero the parameter gradients
         optimizer.zero_grad()
         # forward + backward + optimize

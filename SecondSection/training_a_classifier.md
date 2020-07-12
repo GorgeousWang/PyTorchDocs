@@ -88,6 +88,13 @@ print(' '.join('%5s' % classes[labels[j]] for j in range(4)))
 注意：
 1、运行上述代码可能缺少matplotlib包
 anaconda环境导入方法如下图：
+在anaconda对应环境的terminal终端当中输入：pip install matplotlib
+
+注意：当我们在conda终端环境中用pip安装包或者pytorch,tensorflow时
+会出现C盘容量突然减少的情况（我的anaconda安装在D盘），原因是pip下载
+包的时候回自动缓存到c盘，安装完成之后，会自动删除，不用担心。
+另外在conda终端当中，不要用pip3命令安装包，会导致安装路径不是envs下，
+会出现很多问题。
 
 ![](http://picofwfy.wangfuyu.cn/img/20200712132907.png)
 2、如果你不修改直接运行上述代码，Python会报错，如下
