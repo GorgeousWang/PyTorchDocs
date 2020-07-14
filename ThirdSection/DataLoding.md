@@ -2,7 +2,7 @@
 
 PyTorch提供了许多工具来简化和希望数据加载，使代码更具可读性。
 
-[注意：matplotlib.pyplot 中显示图像的两种模式（交互和阻塞）及其在Python画图中的应用](https://github.com/GorgeousWang/pytorchPractice/ThirdSection/matplotlib.pyplot方法说明.md)
+[注意：matplotlib.pyplot 中显示图像的两种模式（交互和阻塞）及其在Python画图中的应用](https://github.com/GorgeousWang/PyTorchDocs/blob/master/ThirdSection/matplotlib.pyplot方法说明.md)
 
 ### 1.下载安装包
 * scikit-image：用于图像的IO和变换

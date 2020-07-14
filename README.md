@@ -23,7 +23,7 @@
 ### 2.[PyTorch环境搭建](https://github.com/GorgeousWang/PyTorchDocs/blob/master/FirstSection/InstallIutorial.md)
 
 ## 第二章：PyTorch之60min入门
-### 1.[PyTorch 入门](https://github.com/fendouai/GorgeousWang/blob/master/SecondSection/what_is_pytorch.md)
+### 1.[PyTorch 入门](https://github.com/GorgeousWang/blob/master/SecondSection/what_is_pytorch.md)
 ### 2.[PyTorch 自动微分](https://github.com/GorgeousWang/PyTorchDocs/blob/master/SecondSection/autograd_automatic_differentiation.md)
 ### 3.[PyTorch 神经网络](https://github.com/GorgeousWang/PyTorchDocs/blob/master/SecondSection/neural_networks.md)
 ### 4.[PyTorch 图像分类器](https://github.com/GorgeousWang/PyTorchDocs/blob/master/SecondSection/training_a_classifier.md)
