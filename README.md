@@ -30,11 +30,11 @@
 ### 5.[PyTorch 数据并行处理](https://github.com/GorgeousWang/PyTorchDocs/blob/master/SecondSection/optional_data_parallelism.md)
 
 ## 第三章：PyTorch之入门强化
-### 1.[数据加载和处理](https://github.com/GorgeousWang/PyTorchDocs/blob/master/ThirdSection/DataLoding.md)
-### 2.[PyTorch小试牛刀](https://github.com/GorgeousWang/PyTorchDocs/blob/master/ThirdSection/LearningPyTorch.md)
-### 3.[迁移学习](https://github.com/fendouai/PyTorchDocs/blob/master/ThirdSection/TransferLearning.md)
+### 1.☆[数据加载和处理](https://github.com/GorgeousWang/PyTorchDocs/blob/master/ThirdSection/DataLoding.md)
+### 2.☆[PyTorch小试牛刀](https://github.com/GorgeousWang/PyTorchDocs/blob/master/ThirdSection/LearningPyTorch.md)
+### 3.☆[迁移学习](https://github.com/fendouai/PyTorchDocs/blob/master/ThirdSection/TransferLearning.md)
 ### 4.[混合前端的seq2seq模型部署](https://github.com/GorgeousWang/PyTorchDocs/blob/master/ThirdSection/DeployingSeq2SeqModelwithHybridFrontend.MD)
-### 5.[保存和加载模型](https://github.com/GorgeousWang/PyTorchDocs/blob/master/ThirdSection/SaveModel.md)
+### 5.☆[保存和加载模型](https://github.com/GorgeousWang/PyTorchDocs/blob/master/ThirdSection/SaveModel.md)
 
 ## 第四章：PyTorch之图像篇
 ### 1.[微调基于torchvision 0.3的目标检测模型](https://github.com/GorgeousWang/PyTorchDocs/blob/master/fourSection/ObjectDetectionFinetuning.md)

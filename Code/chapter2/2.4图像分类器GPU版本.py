@@ -1,5 +1,5 @@
 # Author:Elli
-
+#note:2020.7.13没有调通
 
 #1加载并归一化CIFAR10，使用torchvision，用它来加载cifar10数据
 import torch
@@ -8,9 +8,7 @@ import torchvision.transforms as transforms
 
 #下面这几行是用于临时检测pycharm GPU版本的可用性
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
-
 # Assume that we are on a CUDA machine, then this should print a CUDA device:
-
 print(device)
 #
 
@@ -90,7 +88,7 @@ class Net(nn.Module):
 
 net = Net()
 # 在GPU上训练 就像你怎么把一个张量转移到GPU上一样，你要将神经网络转到GPU上。
-#net.to(device)
+net.to(device)
 
 
 
@@ -113,12 +111,13 @@ for epoch in range(2):  # loop over the dataset multiple times
         # get the inputs
         inputs, labels = data
         #下面是把输入放到GPU上
-        #inputs, labels = inputs.to(device), labels.to(device)
+        inputs, labels = inputs.to(device), labels.to(device)
 
         # zero the parameter gradients
         optimizer.zero_grad()
         # forward + backward + optimize
         outputs = net(inputs)
+
         loss = criterion(outputs, labels)
         loss.backward()
         optimizer.step()
@@ -180,7 +179,7 @@ class_total = list(0. for i in range(10))
 with torch.no_grad():
     for data in testloader:
         images, labels = data
-        outputs = net(images)
+        outputs = net(images).to(device)
         _, predicted = torch.max(outputs, 1)
         c = (predicted == labels).squeeze()
         for i in range(4):

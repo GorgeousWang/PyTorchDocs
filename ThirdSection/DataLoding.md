@@ -2,9 +2,17 @@
 
 PyTorch提供了许多工具来简化和希望数据加载，使代码更具可读性。
 
+[注意：matplotlib.pyplot 中显示图像的两种模式（交互和阻塞）及其在Python画图中的应用](https://github.com/GorgeousWang/pytorchPractice/ThirdSection/matplotlib.pyplot方法说明.md)
+
 ### 1.下载安装包
 * scikit-image：用于图像的IO和变换
 * pandas：用于更容易地进行csv解析
+
+conda环境中安装上述包：
+conda install scikit-image
+codna install pandas
+齐活~
+
 ```
 from __future__ import print_function, division
 import os
@@ -49,6 +57,43 @@ print('Image name: {}'.format(img_name))
 print('Landmarks shape: {}'.format(landmarks.shape))
 print('First 4 Landmarks: {}'.format(landmarks[:4]))
 ```
+
+注意：上述代码在运行过程中可能报错，报错内容如下：
+```c
+AttributeError: 'Series' object has no attribute 'as_matrix'
+```
+报错原因：使用pandas库进行数据分析报错,主要原因是库版本升级
+'as_matrix()'改为了'values'
+下面是as_matrix()和values方法的代码
+```python
+#as_matrix()与values源码
+def as_matrix(self, columns=None):
+    warnings.warn("Method .as_matrix will be removed in a future version. "
+                      "Use .values instead.", FutureWarning, stacklevel=2)
+    self._consolidate_inplace()
+    return self._data.as_array(transpose=self._AXIS_REVERSED,
+                               items=columns)
+
+@property
+def values(self):
+    self._consolidate_inplace()
+    return self._data.as_array(transpose=self._AXIS_REVERSED)
+
+```
+所以代码如下：
+```
+landmarks_frame = pd.read_csv('data/faces/face_landmarks.csv')
+
+n = 65
+img_name = landmarks_frame.iloc[n, 0]
+landmarks = landmarks_frame.iloc[n, 1:].values
+landmarks = landmarks.astype('float').reshape(-1, 2)
+
+print('Image name: {}'.format(img_name))
+print('Landmarks shape: {}'.format(landmarks.shape))
+print('First 4 Landmarks: {}'.format(landmarks[:4]))
+```
+
 #### 3.1 数据结果
 输出：
 ```
