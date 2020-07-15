@@ -365,7 +365,7 @@ for i in range(len(transformed_dataset)):
 ```buildoutcfg
 dataloader = DataLoader(transformed_dataset, batch_size=4,
                         shuffle=True, num_workers=4)
-
+#注意：num_workers=4会出错，要改成0
 
 # 辅助功能：显示批次
 def show_landmarks_batch(sample_batched):
